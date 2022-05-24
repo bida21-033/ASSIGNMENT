@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <meta charset="UTF-8">
+	 <link rel="stylesheet" href="style.css"/>
+	 <script src="script.js"></script><!DOCTYPE html>
+  
+    
+<style>
+
+body{
+background-color:goldenrod;
+font-family: Arial, Helvetica, sans-seriff;
+} 
+
+*{
+box-sizing: border-box;
+}
+
+
+
+/*style inputs */
+input[type=text], select, textarea {
+width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+
+
+</head>
+<!---section-->
+<section>
+<div class="logo">
+<img src="website images/logo.jpn" alt="fallsrivertheatres">
+<div class="container">
+<div style="text-align:centre">
+<h2>Feedback</h2>
+<p> leave us a message:</p>
+</div>
+<div class="row">
+<div class="column">
+  <form action="/action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="Eaddress">Email Address</label>
+    <input type="text" id="Eaddress" address="Email address" placeholder="email address..">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." 
+	style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
